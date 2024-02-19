@@ -249,9 +249,27 @@
                     <h3>Total: <span class="text-gray-400 font-normal"><span id="totalPrice">0.00</span> TK</span></h3>
                 </div>
                 <hr class="my-7">
-                <button
+                <button onclick="my_modal_1.showModal()" id="makePurchase"
                     class="p-4 w-full  rounded-lg border-none text-white text-xl font-semibold bg-[#E527B2] disabled:opacity-50 disabled:cursor-not-allowed"
                     type="button" disabled>Make Purchase</button>
+
+                <!-- modal -->
+                <dialog id="my_modal_1" class="modal flex items-center justify-center">
+                    <div class="modal-box bg-white py-8 rounded-lg text-center">
+                        <div class="flex items-center justify-center mb-4 mt-10">
+                            <img src="./images/congo.png" alt="" srcset="">
+                        </div>
+                        <h3 class="font-extrabold text-4xl text-black">Congratulations</h3>
+                        <p class="py-4 text-sm text-gray-400">Your purchase the product</p>
+                        <div class="modal-action flex justify-center">
+                            <button onclick="goHome()"
+                                class="mb-12 px-8 py-4 rounded-md border-none text-white text-xl font-light bg-[#E527B2]">Go
+                                Home</button>
+                        </div>
+                    </div>
+                </dialog>
+
+
             </div>
         </div>
 
